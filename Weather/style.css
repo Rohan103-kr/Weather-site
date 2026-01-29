@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #8fd3f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.temp {
+  font-size: 4rem;
+  color: #3b2f8f;
+}
+
+.city {
+  font-size: 2.3rem;
+  margin-top: 10px;
+  color: #3b2f8f;
+}
+
+.time,
+.condition {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.search {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.search button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: #3b2f8f;
+  color: white;
+  border-radius: 5px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 480px) {
+  .temp {
+    font-size: 3rem;
+  }
+
+  .city {
+    font-size: 2rem;
+  }
+}
+#suggestions {
+  list-style: none;
+  margin-top: 5px;
+  background: white;
+  border-radius: 5px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+#suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+#suggestions li:hover {
+  background: #f0f0f0;
+}
