@@ -55,10 +55,6 @@ No installation required.
 ## 🌍 API Used
 Weather data provided using a public weather API.
 
----
-
-## 📸 Screenshots
-(Add screenshots here later)
 
 ---
 
